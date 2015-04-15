@@ -2,7 +2,7 @@
 
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
 	<div data-role="page">
-		<img class="auto-scale" src="../Images/p1/p13.jpg" style="width: 640px; height: 1008px" />
+		<img id="imgBg" class="auto-scale" src="../Images/p1/p13.jpg" style="width: 540px; height: 850.5px" />
 
 		<div class="auto-scale"
 			style="cursor: pointer; position: absolute; z-index: 1; left: 165px; top: 480px; width: 440px; height: 220px">

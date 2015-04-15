@@ -2,7 +2,7 @@
 
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
 	<div data-role="page">
-		<img class="auto-scale" src="Images/p1/p11.jpg" style="width: 640px; height: 1008px" />
+		<img id="imgBg" class="auto-scale" src="Images/p1/p11.jpg" style="width: 540px; height: 850.5px" />
 		
 		<a class="auto-scale" href="Stage1/Rule.aspx" data-transition="fade" data-ajax="false"
 			style="cursor: pointer; position: absolute; z-index: 1; left: 215px; top: 590px; width: 200px; height: 140px">

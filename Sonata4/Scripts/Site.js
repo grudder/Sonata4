@@ -26,6 +26,10 @@ function adjustScale() {
 		var width = parseFloat($(this).css("width"));
 		var height = parseFloat($(this).css("height"));
 		//console.log(left + " - " + top + " - " + width + " - " + height);
+		if (this.id === "imgBg") {
+			width = 640;
+			height = 1008;
+		}
 
 		if (left > 0) {
 			$(this).css("left", left * _ratio);

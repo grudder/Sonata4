@@ -2,13 +2,14 @@
 
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
 	<div data-role="page">
-		<img class="auto-scale" src="../Images/p2/p22.jpg" style="width: 640px; height: 1008px" />
+		<img id="imgBg" class="auto-scale" src="../Images/p2/p22.jpg" style="width: 540px; height: 850.5px" />
 		<img id="imgCar" class="auto-scale" src="../Images/p2/p25.png" style="position: absolute; z-index: 1; left: 90px; top: 272px; width: 145px; height: 68px" />
 		<img id="imgSteeringWheel" class="auto-scale" src="../Images/p2/p24.png"
 			style="position: absolute; z-index: 1; left: 80px; top: 675px; width: 156px; height: 156px" />
-		<img id="imgStop" class="auto-scale" src="../Images/p2/p26.png" onclick="stopToPark()"
-			style="cursor: pointer; position: absolute; z-index: 1; left: 403px; top: 763px; width: 126px; height: 56px" />
-		<img id="imgTooltip" class="auto-scale" src="../Images/p2/p27.png" style="position: absolute; z-index: 1; left: 260px; top: 695px; width: 257px; height: 72px" />
+		<div class="auto-scale" onclick="stopToPark()"
+			style="cursor: pointer; position: absolute; z-index: 1; left: 403px; top: 763px; width: 126px; height: 56px">
+		</div>
+		<img id="imgTooltip" class="auto-scale" src="../Images/p2/p27.png" style="position: absolute; z-index: 1; left: 110px; top: 755px; width: 285px; height: 77px" />
 		<img id="imgReady" class="auto-scale" src="../Images/p2/p2224.png" style="display: none; position: absolute; z-index: 1; left: 220px; top: 250px; width: 183px; height: 47px" />
 		<img id="imgGo" class="auto-scale" src="../Images/p2/p2225.png" style="display: none; position: absolute; z-index: 1; left: 220px; top: 250px; width: 183px; height: 47px" />
 
@@ -38,10 +39,7 @@
 				"font-size": 18 * _ratio + "px",
 				"line-height": 20 * _ratio + "px"
 			});
-			$("#imgCar").animate({
-				left: 460 * _ratio + "px"
-			},
-			2000, countdown);
+			readyGo();
 
 			// 获取已使用的时间
 			getTimeUsed();
@@ -82,14 +80,14 @@
 			$("#span-timer").text("用时：" + m + ":" + s + ":" + ms);
 		}
 
-		// 倒计时
-		function countdown() {
+		// 准备开始
+		function readyGo() {
 			$("#imgReady").show(1000, function () {
 				$("#imgReady").hide();
 				$("#imgGo").show(1000, function () {
 					$("#imgGo").hide();
 					$("#imgTooltip").hide();
-					backCar();
+					moveCar();
 				});
 			});
 		}
@@ -97,12 +95,13 @@
 		var requestId = 0;
 		var animationStartTime = 0;
 
-		// 向后直线倒车
-		function backCar() {
+		// 向右移动汽车
+		function moveCar() {
 			try {
 				animationStartTime = window.Date.now();
 				requestId = window.requestAnimationFrame(animate);
-			} catch (e) {
+			}
+			catch (e) {
 				alert(e);
 			}
 		}
@@ -112,8 +111,8 @@
 			showTimer();
 
 			var car = $("#imgCar");
-			var left = 460 - _timeSpan * 100;
-			if (left < 90) {
+			var left = 90 + _timeSpan * 100;
+			if (left > 460) {
 				stopToPark();
 				return;
 			}
@@ -140,12 +139,12 @@
 			var minLeft = 360;
 			var maxLeft = 380;
 			var left = parseFloat($("#imgCar").css("left")) / _ratio;
-			if (left > maxLeft) {
+			if (left < minLeft) {
 				// 早了
 				$("#imgEarly").show();
 				$("#linkChangePage").attr("href", "Early.aspx");
 			}
-			else if (left < minLeft) {
+			else if (left > maxLeft) {
 				// 晚了
 				$("#imgLate").show();
 				$("#linkChangePage").attr("href", "Late.aspx");
