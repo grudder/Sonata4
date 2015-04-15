@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Sonata4.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head runat="server">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>纵横泊车，等你来战</title>
+	<!-- jQuery Mobile -->
+	<link href="~/Content/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+	<link href="~/Content/Site.css" rel="stylesheet" />
+	<asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</head>
+<body>
+	<asp:ContentPlaceHolder runat="server" ID="MainContent" />
+
+	<script src="<%: ResolveUrl("~/Scripts/jquery-1.8.2.min.js") %>"></script>
+	<link href="<%: ResolveUrl("~/Content/jquery.alerts.css") %>" rel="stylesheet" />
+	<script src="<%: ResolveUrl("~/Scripts/jquery-ui-1.10.3.min.js") %>"></script>
+	<script src="<%: ResolveUrl("~/Scripts/jquery.alerts.js") %>"></script>
+	<script src="<%: ResolveUrl("~/Scripts/Site.js") %>"></script>
+	<script>
+		$(document).bind("mobileinit", function () {
+			//disable ajax nav
+			$.mobile.ajaxEnabled = false;
+		});
+	</script>
+	<script src="<%: ResolveUrl("~/Scripts/jquery.mobile-1.4.5.min.js") %>"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<asp:Literal runat="server" ID="ltlConfig" />
+
+	<asp:ContentPlaceHolder runat="server" ID="ScriptContent" />
+</body>
+</html>
