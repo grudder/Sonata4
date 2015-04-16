@@ -13,7 +13,7 @@
 		</div>
 
 		<div class="wlby_graphic">
-			<img src="../Images/p3/p35.jpg" height="1008px" width="640px" class="wlby_49"/>
+			<input type="image" id="imgBg" class="wlby_49 auto-scale" src="../Images/p3/p35.jpg" style="width: 540px; height: 850.5px" />
 		</div>
 		<div class="wlby_1 wlby_graphic">
 			<div class="wlby_3 wlby_fs">

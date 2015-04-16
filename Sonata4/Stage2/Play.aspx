@@ -27,11 +27,11 @@
 		</a>
 
 		<span id="spanTimeUsed" class="auto-scale"
-			style="display: none; position: absolute; z-index: 11; left: 310px; top: 300px; width: 180px; height: 50px; font-weight: bold; font-size: 50px; line-height: 50px; color: #000; text-shadow: 5px 5px 5px #fff5b3">
+			style="display: none; position: absolute; z-index: 11; left: 310px; top: 310px; width: 180px; height: 50px; font-weight: bold; font-size: 50px; line-height: 50px; color: #000; text-shadow: 5px 5px 5px #fff5b3">
 			0.00s
 		</span>
 		<span id="spanPercent" class="auto-scale"
-			style="display: none; position: absolute; z-index: 11; left: 362px; top: 360px; width: 40px; height: 36px; font-weight: bold; font-size: 36px; line-height: 36px; color: #000; text-shadow: 5px 5px 5px #fff5b3; text-align: right">
+			style="display: none; position: absolute; z-index: 11; left: 362px; top: 370px; width: 40px; height: 36px; font-weight: bold; font-size: 36px; line-height: 36px; color: #000; text-shadow: 5px 5px 5px #fff5b3; text-align: right">
 			19
 		</span>
 	</div>
