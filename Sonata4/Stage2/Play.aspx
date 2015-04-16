@@ -153,8 +153,8 @@
 
 		// 检查停车的位置是否正确
 		function checkPosition() {
-			var minTop = 260 * _ratio;
-			var maxTop = 280 * _ratio;
+			var minTop = 255 * _ratio;
+			var maxTop = 285 * _ratio;
 			var top = parseFloat($("#imgCar").css("top"));
 			if (top > maxTop) {
 				// 早了

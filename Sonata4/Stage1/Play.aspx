@@ -136,8 +136,8 @@
 
 		// 检查停车的位置是否正确
 		function checkPosition() {
-			var minLeft = 360;
-			var maxLeft = 380;
+			var minLeft = 355;
+			var maxLeft = 385;
 			var left = parseFloat($("#imgCar").css("left")) / _ratio;
 			if (left < minLeft) {
 				// 早了
