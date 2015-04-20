@@ -72,37 +72,38 @@ from {
 	-webkit-transform: matrix(1, 0, 0, 1, 141.35, 294.35);
 	opacity: 0;
 }
-24.39% {
+11.42% {
 	-webkit-transform: matrix(1, 0, 0, 1, 141.35, 294.35);
 	opacity: 1;
 }
-24.4%, to {
+11.43%, to {
 	-webkit-transform: matrix(1, 0, 0, 1, 141.35, 294.35);
-}
-}
-@-webkit-keyframes wlby_KF_35 {
-from, 24.39% {
-	-webkit-transform: matrix(1, 0, 0, 1, 132.5, 294.35);
-}
-24.4% {
-	-webkit-transform: matrix(1, 0, 0, 1, 132.5, 294.35);
-	opacity: 1;
-}
-36.59%, to {
-	-webkit-transform: matrix(1, 0, 0, 1, 132.5, 294.35);
-	opacity: 0;
 }
 }
 @-webkit-keyframes wlby_KF_14 {
-from, 8.26% {
+from {
 	-webkit-transform: matrix(1, 0, 0, 1, 377.8, 361.35) scale(1, 1);
+	opacity: 0;
 }
-8.27% {
+9% {
 	-webkit-transform: matrix(1, 0, 0, 1, 377.8, 361.35) scale(1, 1);
 	opacity: 1;
 }
-15.71%, to {
+18%, to {
 	-webkit-transform: matrix(1, 0, 0, 1, 155.85, 293.35) scale(0.5, 0.5);
+	opacity: 0;
+}
+}
+@-webkit-keyframes wlby_KF_35 {
+from, 32.25% {
+	-webkit-transform: matrix(1, 0, 0, 1, 132.5, 294.35);
+}
+32.26% {
+	-webkit-transform: matrix(1, 0, 0, 1, 132.5, 294.35);
+	opacity: 1;
+}
+38.71%, to {
+	-webkit-transform: matrix(1, 0, 0, 1, 132.5, 294.35);
 	opacity: 0;
 }
 }
@@ -128,14 +129,14 @@ from {
 	-webkit-transform: matrix(1, 0, 0, 1, 142.35, 295.35);
 	opacity: 0.199219;
 }
-9.8% {
+12.19% {
 	-webkit-transform: matrix(1, 0, 0, 1, 142.35, 295.35);
 	opacity: 1;
 }
-9.81%, 20.59% {
+12.2%, 25.61% {
 	-webkit-transform: matrix(1, 0, 0, 1, 142.35, 295.35);
 }
-20.6%, to {
+25.62%, to {
 	-webkit-transform: matrix(1, 0, 0, 1, 142.35, 295.35);
 	opacity: 0;
 }
@@ -145,15 +146,15 @@ from {
 	-webkit-transform: matrix(1, 0, 0, 1, 466, 424);
 	opacity: 1;
 }
-57.14%, 61.9% {
+62.5%, 66.66% {
 	-webkit-transform: matrix(1, 0, 0, 1, 466, 424);
 	opacity: 0.898438;
 }
-61.91% {
+66.67% {
 	-webkit-transform: matrix(1, 0, 0, 1, 466, 424);
 	opacity: 1;
 }
-95.24%, to {
+95.84%, to {
 	-webkit-transform: matrix(1, 0, 0, 1, 466, 424);
 	opacity: 0;
 }
@@ -163,14 +164,14 @@ from {
 	-webkit-transform: matrix(1, 0, 0, 1, 487.947, 697.45) rotate(-89.995deg);
 	opacity: 1;
 }
-24.39% {
+32.25% {
 	-webkit-transform: matrix(1, 0, 0, 1, 487.947, 385.5) rotate(-89.995deg);
 	opacity: 1;
 }
-24.4%, 25.61% {
+32.26%, 33.88% {
 	-webkit-transform: matrix(1, 0, 0, 1, 487.947, 385.5) rotate(-89.995deg);
 }
-25.62%, to {
+33.89%, to {
 	-webkit-transform: matrix(1, 0, 0, 1, 487.947, 385.5) rotate(-89.995deg);
 	opacity: 0;
 }
@@ -180,14 +181,14 @@ from {
 	-webkit-transform: matrix(1, 0, 0, 1, 488.447, 596.95) rotate(-89.995deg);
 	opacity: 1;
 }
-24.39% {
+32.25% {
 	-webkit-transform: matrix(1, 0, 0, 1, 488.447, 283.95) rotate(-89.995deg);
 	opacity: 1;
 }
-24.4%, 25.61% {
+32.26%, 33.88% {
 	-webkit-transform: matrix(1, 0, 0, 1, 488.447, 283.95) rotate(-89.995deg);
 }
-25.62%, to {
+33.89%, to {
 	-webkit-transform: matrix(1, 0, 0, 1, 488.447, 283.95) rotate(-89.995deg);
 	opacity: 0;
 }
@@ -197,18 +198,18 @@ from {
 	-webkit-transform: matrix(1, 0, 0, 1, 132.5, 293.35);
 	opacity: 0;
 }
-16.12% {
+9.52% {
 	-webkit-transform: matrix(1, 0, 0, 1, 132.5, 293.35);
 	opacity: 1;
 }
-16.13%, 33.88% {
+9.53%, 16.67% {
 	-webkit-transform: matrix(1, 0, 0, 1, 132.5, 293.35);
 }
-33.89% {
+16.68% {
 	-webkit-transform: matrix(1, 0, 0, 1, 132.5, 293.35);
 	opacity: 1;
 }
-50.02%, to {
+26.21%, to {
 	-webkit-transform: matrix(1, 0, 0, 1, 132.5, 293.35);
 	opacity: 0;
 }
@@ -218,22 +219,22 @@ from {
 	-webkit-transform: matrix(1, 0, 0, 1, 380.8, 359.35) scale(2, 2);
 	opacity: 0;
 }
-4.08% {
+4.72% {
 	-webkit-transform: matrix(1, 0, 0, 1, 380.8, 359.35) scale(2, 2);
 	opacity: 1;
 }
-4.09%, 24.49% {
+4.73%, 28.35% {
 	-webkit-transform: matrix(1, 0, 0, 1, 380.8, 359.35) scale(2, 2);
 }
-24.5% {
+28.36% {
 	-webkit-transform: matrix(1, 0, 0, 1, 380.8, 359.35) scale(2, 2);
 	opacity: 1;
 }
-30.63% {
+35.45% {
 	-webkit-transform: matrix(1, 0, 0, 1, 157.85, 293.35) scale(1, 1);
 	opacity: 1;
 }
-30.64%, to {
+35.46%, to {
 	-webkit-transform: matrix(1, 0, 0, 1, 157.85, 293.35) scale(1, 1);
 }
 }
@@ -242,29 +243,26 @@ from {
 	-webkit-transform: matrix(1, 0, 0, 1, 425.3, 358.35);
 	opacity: 0;
 }
-4.08% {
+4.72% {
 	-webkit-transform: matrix(1, 0, 0, 1, 425.3, 358.35);
 	opacity: 1;
 }
-4.09%, 10.21% {
+4.73%, 9.45% {
 	-webkit-transform: matrix(1, 0, 0, 1, 425.3, 358.35);
 }
-10.22% {
+9.46% {
 	-webkit-transform: matrix(1, 0, 0, 1, 425.3, 358.35);
 	opacity: 1;
 }
-13.62% {
+13.4% {
 	-webkit-transform: matrix(1, 0, 0, 1, 425.3, 358.35);
 	opacity: 0;
 }
-17.02% {
+17.34% {
 	-webkit-transform: matrix(1, 0, 0, 1, 425.3, 358.35);
 	opacity: 1;
 }
-17.03%, 17.71% {
-	-webkit-transform: matrix(1, 0, 0, 1, 425.3, 358.35);
-}
-17.72%, to {
+21.27%, to {
 	-webkit-transform: matrix(1, 0, 0, 1, 425.3, 358.35);
 	opacity: 0;
 }
@@ -437,42 +435,42 @@ from {
 
 .wlby_5
 {
-	-webkit-animation-duration: 1.16667s;
+	-webkit-animation-duration: 1.41667s;
 }
 
 .wlby_8
 {
-	-webkit-animation-duration: 3.33333s;
+	-webkit-animation-duration: 3.66667s;
 }
 
 .wlby_13
 {
-	-webkit-animation-duration: 4.91667s;
+	-webkit-animation-duration: 5.16667s;
 }
 
 .wlby_16
 {
-	-webkit-animation-duration: 6.58333s;
+	-webkit-animation-duration: 6.83333s;
 }
 
 .wlby_34
 {
-	-webkit-animation-duration: 8.25s;
+	-webkit-animation-duration: 8.5s;
 }
 
 .wlby_36
 {
-	-webkit-animation-duration: 10s;
+	-webkit-animation-duration: 9.08333s;
 }
 
 .wlby_1
 {
-	-webkit-animation-duration: 13.4167s;
+	-webkit-animation-duration: 12s;
 }
 
 .wlby_49
 {
-	-webkit-animation-duration: 13.4167s;
+	-webkit-animation-duration: 12s;
 	position: absolute;
 }
 
@@ -485,7 +483,7 @@ from {
 
 .wlby_37
 {
-	-webkit-animation-duration: 3.41667s;
+	-webkit-animation-duration: 2.91667s;
 	-webkit-animation-name: wlby_KF_43;
 	display: none;
 	-webkit-transform: matrix(1, 0, 0, 1, 141.35, 294.35);
@@ -495,7 +493,7 @@ from {
 
 .wlby_6
 {
-	-webkit-animation-duration: 12.25s;
+	-webkit-animation-duration: 10.5833s;
 	-webkit-animation-name: wlby_KF_10;
 	display: none;
 	-webkit-transform: matrix(1, 0, 0, 1, 157.85, 293.35);
@@ -633,7 +631,7 @@ from {
 
 .wlby_56
 {
-	-webkit-animation-duration: 2.5s;
+	-webkit-animation-duration: 0.833333s;
 	display: none;
 	position: absolute;
 	-webkit-transform:matrix(1,0,0,1,378.95,270.5);
@@ -641,14 +639,14 @@ from {
 
 .wlby_55
 {
-	-webkit-animation-duration: 6.58333s;
+	-webkit-animation-duration: 6.83333s;
 	position: absolute;
 	-webkit-transform:matrix(1,0,0,1,378.95,580.45);
 }
 
 .wlby_35
 {
-	-webkit-animation-duration: 5.16667s;
+	-webkit-animation-duration: 3.5s;
 	-webkit-animation-name: wlby_KF_40;
 	display: none;
 	-webkit-transform: matrix(1, 0, 0, 1, 132.5, 293.35);
@@ -659,7 +657,7 @@ from {
 
 .wlby_32
 {
-	-webkit-animation-duration: 6.83333s;
+	-webkit-animation-duration: 5.16667s;
 	-webkit-animation-name: wlby_KF_35;
 	display: none;
 	-webkit-transform: matrix(1, 0, 0, 1, 132.5, 294.35);
@@ -670,7 +668,7 @@ from {
 
 .wlby_14
 {
-	-webkit-animation-duration: 8.5s;
+	-webkit-animation-duration: 6.83333s;
 	-webkit-animation-name: wlby_KF_23;
 	display: none;
 	-webkit-transform: matrix(1, 0, 0, 1, 142.35, 295.35);
@@ -681,7 +679,7 @@ from {
 
 .wlby_9
 {
-	-webkit-animation-duration: 10.0833s;
+	-webkit-animation-duration: 8.33333s;
 	-webkit-animation-name: wlby_KF_14;
 	display: none;
 	-webkit-transform: matrix(1, 0, 0, 1, 155.85, 293.35) scale(0.5, 0.5);
@@ -692,7 +690,7 @@ from {
 
 .wlby_11
 {
-	-webkit-animation-duration: 12.25s;
+	-webkit-animation-duration: 10.5833s;
 	-webkit-animation-name: wlby_KF_19;
 	display: none;
 	-webkit-transform: matrix(1, 0, 0, 1, 425.3, 358.35);
@@ -703,7 +701,7 @@ from {
 
 .wlby_3
 {
-	-webkit-animation-duration: 1.75s;
+	-webkit-animation-duration: 2s;
 	-webkit-animation-name: wlby_KF_5;
 	-webkit-transform: matrix(1, 0, 0, 1, 466, 424);
 	-webkit-transform-origin: -181px 0px;
@@ -713,7 +711,7 @@ from {
 
 .wlby_17
 {
-	-webkit-animation-duration: 6.83333s;
+	-webkit-animation-duration: 5.16667s;
 	-webkit-animation-name: wlby_KF_27;
 	display: none;
 	-webkit-transform: matrix(1, 0, 0, 1, 487.947, 385.5) rotate(-89.995deg);
@@ -724,7 +722,7 @@ from {
 
 .wlby_31
 {
-	-webkit-animation-duration: 6.83333s;
+	-webkit-animation-duration: 5.16667s;
 	-webkit-animation-name: wlby_KF_31;
 	display: none;
 	-webkit-transform: matrix(1, 0, 0, 1, 488.447, 283.95) rotate(-89.995deg);
@@ -732,4 +730,3 @@ from {
 	-webkit-animation-timing-function: linear;
 	opacity: 0;
 }
-

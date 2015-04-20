@@ -7,7 +7,7 @@
 		<img id="imgSteeringWheel" class="auto-scale" src="../Images/p2/p24.png"
 			style="position: absolute; z-index: 1; left: 80px; top: 675px; width: 156px; height: 156px" />
 		<div class="auto-scale" onclick="stopToPark()"
-			style="cursor: pointer; position: absolute; z-index: 1; left: 403px; top: 763px; width: 126px; height: 56px">
+			style="cursor: pointer; position: absolute; z-index: 1; left: 398px; top: 758px; width: 136px; height: 66px">
 		</div>
 		<img id="imgTooltip" class="auto-scale" src="../Images/p2/p27.png" style="position: absolute; z-index: 1; left: 110px; top: 755px; width: 285px; height: 77px" />
 		<img id="imgReady" class="auto-scale" src="../Images/p2/p2224.png" style="display: none; position: absolute; z-index: 1; left: 220px; top: 250px; width: 183px; height: 47px" />
@@ -111,7 +111,7 @@
 			showTimer();
 
 			var car = $("#imgCar");
-			var left = 90 + _timeSpan * 100;
+			var left = 90 + _timeSpan * 150;
 			if (left > 460) {
 				stopToPark();
 				return;
@@ -136,8 +136,8 @@
 
 		// 检查停车的位置是否正确
 		function checkPosition() {
-			var minLeft = 355;
-			var maxLeft = 385;
+			var minLeft = 360;
+			var maxLeft = 380;
 			var left = parseFloat($("#imgCar").css("left")) / _ratio;
 			if (left < minLeft) {
 				// 早了

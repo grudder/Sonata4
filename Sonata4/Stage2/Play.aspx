@@ -3,11 +3,11 @@
 <asp:Content ContentPlaceHolderID="MainContent" runat="server">
 	<div data-role="page">
 		<img id="imgBg" class="auto-scale" src="../Images/p3/p32.jpg" style="width: 540px; height: 850.5px" />
-		<img id="imgCar" class="auto-scale" src="../Images/p3/p35.png" style="position: absolute; z-index: 1; left: 365px; top: 425px; width: 60px; height: 129px" />
+		<img id="imgCar" class="auto-scale" src="../Images/p3/p35.png" style="position: absolute; z-index: 1; left: 365px; top: 550px; width: 60px; height: 129px" />
 		<img id="imgSteeringWheel" class="auto-scale" src="../Images/p2/p24.png"
 			style="position: absolute; z-index: 1; left: 80px; top: 675px; width: 156px; height: 156px" />
 		<div class="auto-scale" onclick="stopToPark()"
-			style="cursor: pointer; position: absolute; z-index: 1; left: 403px; top: 763px; width: 126px; height: 56px">
+			style="cursor: pointer; position: absolute; z-index: 1; left: 398px; top: 758px; width: 136px; height: 66px">
 		</div>
 		<img id="imgTooltip" class="auto-scale" src="../Images/p2/p27.png" style="position: absolute; z-index: 1; left: 110px; top: 755px; width: 285px; height: 77px" />
 		<img id="imgReady" class="auto-scale" src="../Images/p2/p2224.png" style="display: none; position: absolute; z-index: 1; left: 220px; top: 250px; width: 183px; height: 47px" />
@@ -31,7 +31,7 @@
 			0.00s
 		</span>
 		<span id="spanPercent" class="auto-scale"
-			style="display: none; position: absolute; z-index: 11; left: 362px; top: 370px; width: 40px; height: 36px; font-weight: bold; font-size: 36px; line-height: 36px; color: #000; text-shadow: 5px 5px 5px #fff5b3; text-align: right">
+			style="display: none; position: absolute; z-index: 11; left: 362px; top: 365px; width: 40px; height: 36px; font-weight: bold; font-size: 36px; line-height: 36px; color: #000; text-shadow: 5px 5px 5px #fff5b3; text-align: right">
 			19
 		</span>
 	</div>
@@ -53,8 +53,8 @@
 				"line-height": 50 * _ratio + "px"
 			});
 			$("#spanPercent").css({
-				"font-size": 36 * _ratio + "px",
-				"line-height": 36 * _ratio + "px"
+				"font-size": 40 * _ratio + "px",
+				"line-height": 40 * _ratio + "px"
 			});
 
 			readyGo();
@@ -129,7 +129,7 @@
 			showTimer();
 
 			var car = $("#imgCar");
-			var top = 425 - _timeSpan * 70;
+			var top = 550 - _timeSpan * 150;
 			if (top < 240) {
 				stopToPark();
 				return;
@@ -153,8 +153,8 @@
 
 		// 检查停车的位置是否正确
 		function checkPosition() {
-			var minTop = 255 * _ratio;
-			var maxTop = 285 * _ratio;
+			var minTop = 260 * _ratio;
+			var maxTop = 280 * _ratio;
 			var top = parseFloat($("#imgCar").css("top"));
 			if (top > maxTop) {
 				// 早了

@@ -164,9 +164,10 @@
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="ScriptContent" runat="server">
+	<script src="<%: ResolveUrl("~/Scripts/Polyfill.js") %>"></script>
 	<script src="../Scripts/Stage2.js"></script>
 	<script>
-		var _timeUsed = 4.1;
+		var _timeUsed = 4.0;
 		var _timeSpan = 0.0;
 
 		$(document).on("pageinit", function () {
@@ -204,15 +205,15 @@
 
 		function startAnimate() {
 			_timeSpan = (window.Date.now() - animationStartTime) / 1000;
-			if (6.6 <= _timeSpan && _timeSpan <= 8.2) {
-				_timeSpan = _timeSpan - 6.6;
+			if (7 <= _timeSpan && _timeSpan <= 8.5) {
+				_timeSpan = _timeSpan - 7;
 				showTimer();
 			}
-			else if (10.8 <= _timeSpan && _timeSpan <= 13.3) {
-				_timeSpan = _timeSpan - 10.8 + 1.6;
+			else if (9.41 <= _timeSpan && _timeSpan <= 11.91) {
+				_timeSpan = _timeSpan - 9.41 + 1.5;
 				showTimer();
 			}
-			else if (_timeSpan > 13.3) {
+			else if (_timeSpan > 11.91) {
 				stopAnimate();
 			}
 			requestId = window.requestAnimationFrame(startAnimate);
