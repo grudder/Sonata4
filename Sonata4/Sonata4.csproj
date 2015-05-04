@@ -424,6 +424,7 @@
     <Compile Include="Common\LotteryService.cs" />
     <Compile Include="Models\Prize.cs" />
     <Compile Include="Models\Score.cs" />
+    <Compile Include="Models\Provider.cs" />
     <Compile Include="Rule.aspx.cs">
       <DependentUpon>Rule.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

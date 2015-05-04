@@ -41,6 +41,12 @@ namespace Sonata4.DataAccess
 			set;
 		}
 
+		public virtual DbSet<Provider> Providers
+		{
+			get;
+			set;
+		}
+
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{
 		}

@@ -23,7 +23,11 @@
 		<img id="imgEarly" class="auto-scale" src="../Images/p2/p26.jpg" style="display: none; position: absolute; z-index: 10; left: 0; top: 0; width: 640px; height: 1008px" />
 		<img id="imgLate" class="auto-scale" src="../Images/p2/p27.jpg" style="display: none; position: absolute; z-index: 10; left: 0; top: 0; width: 640px; height: 1008px" />
 		<img id="imgProper" class="auto-scale" src="../Images/p2/p28.jpg" style="display: none; position: absolute; z-index: 10; left: 0; top: 0; width: 640px; height: 1008px" />
-		<a id="linkChangePage" class="auto-scale" style="position: absolute; z-index: 11; left: 255px; top: 498px; width: 128px; height: 55px">
+		<a id="linkChangePage" class="auto-scale" style="position: absolute; z-index: 11; left: 117px; top: 498px; width: 128px; height: 55px">
+		</a>
+		<a id="linkChangePage1" class="auto-scale" style="position: absolute; z-index: 11; left: 395px; top: 498px; width: 128px; height: 55px">
+		</a>
+		<a id="linkChangePage2" class="auto-scale" style="position: absolute; z-index: 11; left: 255px; top: 498px; width: 128px; height: 55px">
 		</a>
 	</div>
 </asp:Content>
@@ -142,12 +146,14 @@
 			if (left < minLeft) {
 				// 早了
 				$("#imgEarly").show();
-				$("#linkChangePage").attr("href", "Early.aspx");
+				$("#linkChangePage").attr("href", "Play.aspx");
+				$("#linkChangePage1").attr("href", "../Appointments/Create.aspx");
 			}
 			else if (left > maxLeft) {
 				// 晚了
 				$("#imgLate").show();
-				$("#linkChangePage").attr("href", "Late.aspx");
+				$("#linkChangePage").attr("href", "Play.aspx");
+				$("#linkChangePage1").attr("href", "../Appointments/Create.aspx");
 			}
 			else {
 				// 合适
@@ -195,7 +201,7 @@
 			.on("end", function () {
 				// 动画完成后进行页面跳转
 				$("#imgProper").show();
-				$("#linkChangePage").attr("href", "Proper.aspx");
+				$("#linkChangePage2").attr("href", "Proper.aspx");
 			});
 		}
 	</script>

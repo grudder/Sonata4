@@ -23,9 +23,12 @@
 		<img id="imgEarly" class="auto-scale" src="../Images/p3/p37.jpg" style="display: none; position: absolute; z-index: 10; left: 0; top: 0; width: 640px; height: 1008px" />
 		<img id="imgLate" class="auto-scale" src="../Images/p3/p36.jpg" style="display: none; position: absolute; z-index: 10; left: 0; top: 0; width: 640px; height: 1008px" />
 		<img id="imgProper" class="auto-scale" src="../Images/p3/p38.jpg" style="display: none; position: absolute; z-index: 10; left: 0; top: 0; width: 640px; height: 1008px" />
-		<a id="linkChangePage" class="auto-scale" style="position: absolute; z-index: 11; left: 255px; top: 498px; width: 128px; height: 55px">
+		<a id="linkChangePage" class="auto-scale" style="position: absolute; z-index: 11; left: 117px; top: 498px; width: 128px; height: 55px">
 		</a>
-
+        <a id="linkChangePage1" class="auto-scale" style="position: absolute; z-index: 11; left: 395px; top: 498px; width: 128px; height: 55px">
+		</a>
+		<a id="linkChangePage2" class="auto-scale" style="position: absolute; z-index: 11; left: 255px; top: 498px; width: 128px; height: 55px">
+		</a>
 		<span id="spanTimeUsed" class="auto-scale"
 			style="display: none; position: absolute; z-index: 11; left: 310px; top: 310px; width: 180px; height: 50px; font-weight: bold; font-size: 50px; line-height: 50px; color: #000; text-shadow: 5px 5px 5px #fff5b3">
 			0.00s
@@ -159,12 +162,14 @@
 			if (top > maxTop) {
 				// 早了
 				$("#imgEarly").show();
-				$("#linkChangePage").attr("href", "Early.aspx");
+				$("#linkChangePage").attr("href", "Play.aspx");
+				$("#linkChangePage1").attr("href", "../Appointments/Create.aspx");
 			}
 			else if (top < minTop) {
 				// 晚了
 				$("#imgLate").show();
-				$("#linkChangePage").attr("href", "Late.aspx");
+				$("#linkChangePage").attr("href", "Play.aspx");
+				$("#linkChangePage1").attr("href", "../Appointments/Create.aspx");
 			}
 			else {
 				// 合适 - 时间直接加2秒
@@ -245,7 +250,7 @@
 					showTimer();
 				});
 
-				$("#linkChangePage").attr("href", "Proper.aspx");
+				$("#linkChangePage2").attr("href", "Proper.aspx");
 			});
 		}
 	</script>
