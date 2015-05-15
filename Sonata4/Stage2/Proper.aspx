@@ -13,7 +13,7 @@
 		</div>
 
 		<div class="wlby_graphic">
-			<input type="image" id="imgBg" class="wlby_49 auto-scale" src="../Images/p3/p35.jpg" style="width: 540px; height: 850.5px" />
+			<input type="image" id="imgBg" class="wlby_49 auto-scale" src="../Images/p3/p351.jpg" style="width: 540px; height: 850.5px" />
 		</div>
 		<div class="wlby_1 wlby_graphic">
 			<div class="wlby_3 wlby_fs">
@@ -244,6 +244,8 @@
 		}
 
 		function lottery() {
+			location.href = "../Appointments/Create.aspx";
+			return;
 			var url = "../Common/BusinessHandler.ashx?action=draw-lottery&r=" + Math.random();
 			$.ajax({
 				type: "POST",
